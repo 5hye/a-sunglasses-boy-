@@ -1,0 +1,89 @@
+.floor1{width: 300px; 
+  height: 300px; 
+  display: flex; 
+  position: absolute; top:380px; left:320px;
+  z-index: 2;}
+.floor2{width: 300px; 
+  height: 200px; 
+  display: flex; 
+  position: absolute; top:415px;left:345px;
+  z-index: 3;}
+.floor3{width: 300px; 
+  height: 200px; 
+  display: flex; 
+  position: absolute; top:450px;left:370px;
+  z-index: 3;}
+.floor1-1{width: 300px; 
+  height: 300px; 
+  display: flex; 
+  position: absolute; top:380px; left:850px;
+  z-index: 2;}
+.floor2-1{width: 300px; 
+  height: 200px; 
+  display: flex; 
+  position: absolute; top:415px;left:875px;
+  z-index: 3;}
+.floor3-1{width: 300px; 
+  height: 200px; 
+  display: flex; 
+  position: absolute; top:450px;left:900px;
+  z-index: 3;}
+.floor4{width: 300px; 
+  height: 200px; 
+  position: absolute; top:500px;left:210px;
+  z-index: 3;}
+.floor4-1{width: 300px; 
+  height: 200px; 
+  position: absolute; top:500px;left:1180px;
+  z-index: 3;}
+.under{position: absolute;
+  z-index: 1;} 
+.box{
+ width:50px;
+
+  height: 35px;
+  background-color:black;
+  transition-property: all;
+  transition-duration: 0.5s;
+  float: left;
+  animation: opacityToZero;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;}
+
+.box:hover{
+  transform: rotate(180deg);
+  animation-play-state: running;}
+
+.box2{
+ width:50px;
+
+  height: 35px;
+  background-color:white;
+  transition-property: all;
+  transition-duration: 0.5s;
+  float: left;
+  animation: opacityToZero;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;}
+
+.box2:hover{
+  transform: rotate(180deg);
+  animation-play-state: running;}
+
+.box3{
+ width:80px;
+  height: 80px;
+  background-color:hotpink;
+  border:10px solid #cdf722;
+  border-radius: 50px;
+  left:50px; top: 500px;}
+
+.box3:hover{
+ background-color: red;}
+
+@keyframes opacityToZero{
+  0%{opacity: 1}
+  100%{opacity: 0}
+}
